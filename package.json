@@ -1,6 +1,7 @@
 {
   "name": "rspack-mf-mf-plugin",
   "version": "1.0.0",
+  "packageManager": "pnpm@10.6.3",
   "private": true,
   "type": "module",
   "scripts": {

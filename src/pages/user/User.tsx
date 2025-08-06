@@ -94,8 +94,12 @@ export const UserPage = () => {
                         state,
                       });
                     }}
+                    sx={{
+                      textDecorationLine: "underline",
+                      cursor: "pointer",
+                    }}
                   >
-                    {row.protein}
+                    Jump to {row.protein}
                   </TableCell>
                 </TableRow>
               ))}

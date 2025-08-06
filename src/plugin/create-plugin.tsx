@@ -1,6 +1,7 @@
 import { UserPage } from "../pages/user/User";
 import { ctx } from "./ctx";
 import { UserDetailPage } from "../pages/user/UserDetail";
+import InboxIcon from "@mui/icons-material/MoveToInbox";
 
 const Route = {
   item1: "item1",
@@ -40,33 +41,38 @@ export default function createMF(params: any) {
     createMenus() {
       return [
         {
-          id: "APS-Goup1-id",
-          label: "APS-Goup1-label",
+          id: "plugin-a-goup1-id",
+          label: "plugin-a-goup1-label",
+          icon: <InboxIcon />,
           children: [
             {
-              id: "APS-item1-id",
-              label: "APS-plugin-page1",
+              id: "plugin-a-item1-id",
+              label: "plugin-a-plugin-page1",
               peerRouteId: Route.item1,
+              icon: <InboxIcon />,
             },
             {
-              id: "APS-external-id",
-              label: "APS-external-label",
-              externalUrl: "https://baidu.com",
+              id: "plugin-a-external-id",
+              label: "plugin-a Bing search",
+              externalUrl: "https://bing.com",
+              icon: <InboxIcon />,
             },
           ],
         },
         {
-          id: "APS-item2-id",
-          label: "APS-plugin-page2",
+          id: "plugin-a-item2-id",
+          label: "plugin-a-plugin-page2",
           peerRouteId: Route.item2,
+          icon: <InboxIcon />,
         },
         {
-          id: "APS-user-id",
+          id: "plugin-a-user-id",
           label: "User List",
           peerRouteId: Route.user,
+          icon: <InboxIcon />,
         },
         {
-          id: "APS-user-detail-id",
+          id: "plugin-a-user-detail-id",
           label: "User Detail",
           peerRouteId: Route.userDetail,
           hidden: true,
